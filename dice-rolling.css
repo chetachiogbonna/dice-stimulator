@@ -1,0 +1,74 @@
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+div {
+  font-size: 150px;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.animation {
+  animation-name: roll;
+}
+
+@keyframes roll {
+  0% { 
+    transform: rotateY(0deg) rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(720deg) rotateY(720deg);
+  }
+}
+
+button {
+  cursor: pointer;
+  background-color: purple;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 15px;
+}
+
+button:active,
+button:focus {
+  background-color: rgb(214, 41, 214);
+}
+
+ul {
+  display: grid;
+  grid-template-columns: 300px;
+  row-gap: 5px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(175, 175, 175);
+  height: 40px;
+  border-radius: 5px;
+}
+
+main div:nth-child(even) {
+  width: 100px;
+  height: 100px;
+  background-color: purple;
+  margin-bottom: 10px;
+}
+
+main div:nth-child(odd) {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  margin-bottom: 10px;
+}
+
+main section {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: red;
+}
